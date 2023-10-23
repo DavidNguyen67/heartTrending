@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edg
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;600&display=swap" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet"/>
+    <link rel="icon" type="image/x-icon" href="heart.svg" />
+    <title>Bé Nguyễn Thu nè😳</title>
+  </head>
+  <body>
+        <!-- <audio autoplay="autopaly">
+      <source src="renxi.mp3" type="audio/mp3" />
+    </audio> -->
+    <!-- 星空html -->
+    <!-- <div> -->
+      <div class="container2">
+        <div class="content">
+          <canvas id="universe"></canvas>
+        </div>
+      </div>
+      <!-- </div> -->
+      <div class="title">
+        <!-- EDIT HERE -->
+        <h3 class="STARDUST1">2023</h3>
+        <h1 class="STARDUST2">NGUYỄN THỊ THU</h1>
+        <h3 class="STARDUST3">L O V E <strong>❤</strong> Y O U</h3>
+        <img class="img" src="anh4.jpg" alt="JUNO_OKYO" />
+        <canvas id="pinkboard"></canvas>
+      </div>
+
+    <script src="script.js"></script>
+    <audio src="audioHeart.mp3" id="audio" autoplay="true" muted="true"></audio>
+  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/particle.js"></script>
+  <script src="js/universe.js"></script>
+  <script>
+    var audio = document.createElement('audio');
+    window.addEventListener('load', () => {
+      audio.play();
+      // setTimeout(() => {
+      //   alert('Nhớ hình dáng này và bản nhạc này chứ😳');
+      //   alert('Tầm mai kia t sẽ cho m 1 cái khác, xinh hơn, đẹp😁');
+      //   alert('Khi bài hát kết thúc, sẽ có 1 thứ qtrong lắm á');
+      //   alert('Chuẩn bị nói gì đi nhá');
+      // }, 1200);
+    });
+    document.body.appendChild(audio);
+    audio.src = './audioHeart.mp3';
+    audio.addEventListener('ended', () => {
+      window.location.href = 'https://m.me/davidNguyen67Dev';
+    });
+  </script>
+</html>
