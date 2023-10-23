@@ -54,13 +54,13 @@
         const none = document.querySelector('#none');
         none.innerText =
           'Muốn chuyển sang 1 thứ qtrong khác thì ấn vào màn hình nha';
+        document.body.addEventListener('click', () => {
+          window.location.href = 'https://www.facebook.com/davidNguyen67Dev';
+        });
         setTimeout(() => {
           none.innerText = '';
         }, 8000);
       }, 3523);
-      document.body.addEventListener('click', () => {
-        window.location.href = 'https://m.me/davidNguyen67Dev';
-      });
     });
   </script>
 </html>
