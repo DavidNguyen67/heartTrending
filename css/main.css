@@ -208,7 +208,7 @@ img {
   clip-path: polygon(-41% 0, 50% 91%, 141% 0);
 }
 
-#none {
+#notifyText {
   position: absolute;
   bottom: -10%;
   width: 100%;

@@ -33,7 +33,7 @@
       <h3 class="STARDUST3">I <strong id="icon"></strong> Y O U</h3>
       <img class="img" src="nguyenThuLove.jpg" alt="JUNO_OKYO" />
       <canvas id="pinkboard"></canvas>
-      <p id="none" style="color: white; text-align: center"></p>
+      <p id="notifyText" style="color: white; text-align: center"></p>
     </div>
 
     <script src="script.js"></script>
@@ -51,14 +51,16 @@
       audio.play();
 
       await setTimeout(() => {
-        const none = document.querySelector('#none');
-        none.innerText =
-          'Muốn chuyển sang 1 thứ qtrong khác thì ấn vào màn hình nha';
+        const notifyText = document.querySelector('#notifyText');
+        notifyText
+          ? (notifyText.innerText =
+              'Muốn chuyển sang 1 thứ qtrong khác thì ấn vào màn hình nha')
+          : '';
         document.body.addEventListener('click', () => {
           window.location.href = 'https://www.facebook.com/davidNguyen67Dev';
         });
         setTimeout(() => {
-          none.innerText = '';
+          notifyText.innerText = '';
         }, 8000);
       }, 3523);
     });
