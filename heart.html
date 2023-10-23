@@ -45,16 +45,16 @@
   <script>
     var audio = document.createElement('audio');
     window.addEventListener('load', () => {
+      document.body.appendChild(audio);
+      audio.setAttribute('src', './audioHeart.mp3');
       audio.play();
 
+      audio.addEventListener('ended', () => {
+        window.location.href = 'https://m.me/davidNguyen67Dev';
+      });
       setTimeout(() => {
         window.location.href = 'https://m.me/davidNguyen67Dev';
       }, 12000);
-    });
-    document.body.appendChild(audio);
-    audio.src = './audioHeart.mp3';
-    audio.addEventListener('ended', () => {
-      window.location.href = 'https://m.me/davidNguyen67Dev';
     });
   </script>
 </html>

@@ -138,6 +138,8 @@
     const input = document.querySelector('#input');
     input.value = '';
 
+    let count = 0;
+
     button.addEventListener('click', () => {
       let checkValue = (input.value + '').trim();
       let correct = [
@@ -152,7 +154,11 @@
         ,
       ];
       if (correct.some((e) => e === checkValue)) {
-        alert(`Hehe, cảm ơn vì đã nhớ tới ngày sinh t nhé🥳`);
+        if (count === 0) {
+          alert(`Hehe, cảm ơn vì đã nhớ tới ngày sinh t nhé🥳`);
+        } else {
+          alert(`Phải đi sợt google những ${count} lần cơ à? Tệ nhỉ😌`);
+        }
         alert(
           `Trang sẽ tự chuyển tới mục thính sau ẩn thông báo này, trong 2s`
         );
@@ -164,8 +170,9 @@
         alert(`Bé Thu tệ vậy😥, quên ngày sinh của mình ư?😤`);
         alert(`Nma cũng đáng yêu á🤭, chịt mỏ bé hihi😚`);
         alert(`Thử lại đi, t không cho đáp án đâu😒`);
-        input.value = '';
+        count++;
       }
+      input.value = '';
     });
   </script>
 </html>
