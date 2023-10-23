@@ -33,6 +33,7 @@
       <h3 class="STARDUST3">I <strong id="icon"></strong> Y O U</h3>
       <img class="img" src="nguyenThuLove.jpg" alt="JUNO_OKYO" />
       <canvas id="pinkboard"></canvas>
+      <p id="none" style="color: white; text-align: center"></p>
     </div>
 
     <script src="script.js"></script>
@@ -44,17 +45,22 @@
   <script src="js/universe.js"></script>
   <script>
     var audio = document.createElement('audio');
-    window.addEventListener('load', () => {
+    window.addEventListener('load', async () => {
       document.body.appendChild(audio);
       audio.setAttribute('src', './audioHeart.mp3');
       audio.play();
 
-      audio.addEventListener('ended', () => {
+      await setTimeout(() => {
+        const none = document.querySelector('#none');
+        none.innerText =
+          'Muốn chuyển sang 1 thứ qtrong khác thì ấn vào màn hình nha';
+        setTimeout(() => {
+          none.innerText = '';
+        }, 8000);
+      }, 3523);
+      body.addEventListener('click', () => {
         window.location.href = 'https://m.me/davidNguyen67Dev';
       });
-      setTimeout(() => {
-        window.location.href = 'https://m.me/davidNguyen67Dev';
-      }, 12000);
     });
   </script>
 </html>

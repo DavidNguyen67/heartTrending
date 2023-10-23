@@ -80,7 +80,7 @@ canvas {
 .img {
   position: absolute;
   left: 50%;
-  top: 65%;
+  top: 64%;
   transform: translate(-50%, -50%);
   width: 420px;
   height: 420px;
@@ -206,4 +206,10 @@ img {
   -webkit-mask-box-image: var(--_m);
   mask-border: var(--_m);
   clip-path: polygon(-41% 0, 50% 91%, 141% 0);
+}
+
+#none {
+  position: absolute;
+  bottom: -10%;
+  width: 100%;
 }
