@@ -49,7 +49,10 @@
       document.body.appendChild(audio);
       audio.setAttribute('src', './audioHeart.mp3');
       audio.play();
-
+      audio.addEventListener(
+        'ended',
+        setTimeout(() => audio.play(), 1000)
+      );
       await setTimeout(() => {
         const notifyText = document.querySelector('#notifyText');
         notifyText
